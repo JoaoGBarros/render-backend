@@ -1,0 +1,13 @@
+com\br\sitecai\security\jwt\JwtAuthFilter.class
+com\br\sitecai\security\dto\AuthDTO.class
+com\br\sitecai\security\controllers\AuthController.class
+com\br\sitecai\security\jwt\JwtGenerator.class
+com\br\sitecai\user\entity\Usuario.class
+com\br\sitecai\SiteCaiApplication.class
+com\br\sitecai\security\dto\AuthResponseDTO.class
+com\br\sitecai\user\repository\UserRepository.class
+com\br\sitecai\security\CustomUserDetailsService.class
+com\br\sitecai\security\SecurityConfig.class
+com\br\sitecai\user\enums\UserRole.class
+com\br\sitecai\security\jwt\JwtAuthEntryPoint.class
+com\br\sitecai\security\jwt\JwtConstants.class

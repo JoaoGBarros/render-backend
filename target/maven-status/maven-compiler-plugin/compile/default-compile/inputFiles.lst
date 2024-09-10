@@ -1,0 +1,13 @@
+C:\Development\site-cai\backend\src\main\java\com\br\sitecai\security\controllers\AuthController.java
+C:\Development\site-cai\backend\src\main\java\com\br\sitecai\security\CustomUserDetailsService.java
+C:\Development\site-cai\backend\src\main\java\com\br\sitecai\security\dto\AuthDTO.java
+C:\Development\site-cai\backend\src\main\java\com\br\sitecai\security\dto\AuthResponseDTO.java
+C:\Development\site-cai\backend\src\main\java\com\br\sitecai\security\jwt\JwtAuthEntryPoint.java
+C:\Development\site-cai\backend\src\main\java\com\br\sitecai\security\jwt\JwtAuthFilter.java
+C:\Development\site-cai\backend\src\main\java\com\br\sitecai\security\jwt\JwtConstants.java
+C:\Development\site-cai\backend\src\main\java\com\br\sitecai\security\jwt\JwtGenerator.java
+C:\Development\site-cai\backend\src\main\java\com\br\sitecai\security\SecurityConfig.java
+C:\Development\site-cai\backend\src\main\java\com\br\sitecai\SiteCaiApplication.java
+C:\Development\site-cai\backend\src\main\java\com\br\sitecai\user\entity\Usuario.java
+C:\Development\site-cai\backend\src\main\java\com\br\sitecai\user\enums\UserRole.java
+C:\Development\site-cai\backend\src\main\java\com\br\sitecai\user\repository\UserRepository.java
