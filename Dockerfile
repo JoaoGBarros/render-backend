@@ -1,10 +1,8 @@
-FROM maven:3.8.5-jdk-17 AS build
-WORKDIR /app
+FROM maven:latest  AS build
 COPY . .
-RUN mvn clean package
+RUN mvn clean package -DskipTests
 
-FROM openjdk:17-jdk-slim
-WORKDIR /app
-COPY --from=build /app/target/seu-aplicativo.jar /app/seu-aplicativo.jar
+FROM openjdk:17.0.1-jdk-slim
+COPY --from=build /target/*.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/app/seu-aplicativo.jar"]
+ENTRYPOINT [ "java", "-jar", "app.jar" ]
