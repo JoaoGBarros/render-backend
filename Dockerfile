@@ -1,14 +1,8 @@
-# Usar uma imagem oficial do Java
-FROM openjdk:17-jdk-alpine
+FROM maven:3.8.5-jdk-17 AS build
+COPY . .
+RUN mvn clean package -DskipTests
 
-# Definir o diretório de trabalho dentro do container
-WORKDIR /app
-
-# Copiar o arquivo JAR da aplicação para o container
-COPY target/*.jar app.jar
-
-# Expor a porta 8080
+FROM openjdk:17.0.1-jdk-slim
+COPY --from=build /target/*.jar app.jar
 EXPOSE 8080
-
-# Comando para rodar a aplicação Spring Boot
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT [ "java", "-jar", "app.jar" ]
